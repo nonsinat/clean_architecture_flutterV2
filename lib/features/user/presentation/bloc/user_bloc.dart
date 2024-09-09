@@ -1,8 +1,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:news_app_clean_architecture/core/resources/data_state.dart';
-import 'package:news_app_clean_architecture/features/user/domain/entities/user_entities.dart';
-import 'package:news_app_clean_architecture/features/user/domain/usecase/get_all_user_usecase.dart';
+import 'package:clean_architecture/core/resources/data_state.dart';
+import 'package:clean_architecture/features/user/domain/entities/user_entities.dart';
+import 'package:clean_architecture/features/user/domain/usecase/get_all_user_usecase.dart';
 
 part 'user_event.dart';
 part 'user_state.dart';

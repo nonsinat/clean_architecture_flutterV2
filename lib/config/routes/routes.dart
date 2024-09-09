@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app_clean_architecture/features/user/presentation/views/user_screen.dart';
+import 'package:clean_architecture/features/user/presentation/views/user_screen.dart';
 
 import '../../features/daily_news/domain/entities/article.dart';
 import '../../features/daily_news/presentation/pages/article_detail/article_detail.dart';

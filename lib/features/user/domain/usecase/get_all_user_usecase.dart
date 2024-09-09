@@ -1,7 +1,7 @@
-import 'package:news_app_clean_architecture/core/resources/data_state.dart';
-import 'package:news_app_clean_architecture/core/usecase/usecase.dart';
-import 'package:news_app_clean_architecture/features/user/domain/entities/user_entities.dart';
-import 'package:news_app_clean_architecture/features/user/domain/repositories/user_repository.dart';
+import 'package:clean_architecture/core/resources/data_state.dart';
+import 'package:clean_architecture/core/usecase/usecase.dart';
+import 'package:clean_architecture/features/user/domain/entities/user_entities.dart';
+import 'package:clean_architecture/features/user/domain/repositories/user_repository.dart';
 
 class GetAllUserUsecase
     implements UseCase<DataState<List<UserEntity>>, NoParams> {

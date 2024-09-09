@@ -1,6 +1,6 @@
 // lib/features/user/data/datasources/user_api_service.dart
 import 'package:dio/dio.dart';
-import 'package:news_app_clean_architecture/features/user/data/model/user_model.dart';
+import 'package:clean_architecture/features/user/data/model/user_model.dart';
 
 class UserApiService {
   final Dio dio;

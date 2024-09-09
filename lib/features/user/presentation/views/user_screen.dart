@@ -1,7 +1,7 @@
 // lib/features/user/presentation/pages/user_list_page.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:news_app_clean_architecture/injection_container.dart';
+import 'package:clean_architecture/injection_container.dart';
 import '../bloc/user_bloc.dart';
 
 class UserListPage extends StatelessWidget {
