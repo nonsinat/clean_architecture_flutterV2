@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:clean_architecture/features/user/presentation/views/user_screen.dart';
+import 'package:clean_architecture/presentation/user/presentation/views/user_screen.dart';
 
-import '../../features/daily_news/domain/entities/article.dart';
-import '../../features/daily_news/presentation/pages/article_detail/article_detail.dart';
-import '../../features/daily_news/presentation/pages/home/daily_news.dart';
-import '../../features/daily_news/presentation/pages/saved_article/saved_article.dart';
+import '../../presentation/daily_news/domain/entities/article.dart';
+import '../../presentation/daily_news/presentation/pages/article_detail/article_detail.dart';
+import '../../presentation/daily_news/presentation/pages/home/daily_news.dart';
+import '../../presentation/daily_news/presentation/pages/saved_article/saved_article.dart';
 
 class AppRoutes {
   static Route onGenerateRoutes(RouteSettings settings) {
