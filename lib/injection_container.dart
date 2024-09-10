@@ -35,14 +35,21 @@ Future<void> initializeDependencies() async {
       () => UserRepositoryImpl(sl<UserApiService>()));
 
   //UseCases
-  sl.registerSingleton<GetArticleUseCase>(GetArticleUseCase(sl()));
-  sl.registerLazySingleton(() => GetAllUserUsecase(sl<UserRepository>()));
 
-  sl.registerSingleton<GetSavedArticleUseCase>(GetSavedArticleUseCase(sl()));
+    // Article
+      sl.registerSingleton<GetArticleUseCase>(GetArticleUseCase(sl()));
 
-  sl.registerSingleton<SaveArticleUseCase>(SaveArticleUseCase(sl()));
+    // All User
+      sl.registerLazySingleton(() => GetAllUserUsecase(sl<UserRepository>()));
 
-  sl.registerSingleton<RemoveArticleUseCase>(RemoveArticleUseCase(sl()));
+    // Get All Save Article
+      sl.registerSingleton<GetSavedArticleUseCase>(GetSavedArticleUseCase(sl()));
+      
+    // Save Article
+      sl.registerSingleton<SaveArticleUseCase>(SaveArticleUseCase(sl()));
+
+    // Remove Article
+      sl.registerSingleton<RemoveArticleUseCase>(RemoveArticleUseCase(sl()));
 
   //Blocs
   sl.registerFactory<RemoteArticlesBloc>(() => RemoteArticlesBloc(sl()));

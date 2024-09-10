@@ -1,4 +1,5 @@
 // lib/features/user/presentation/pages/user_list_page.dart
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:clean_architecture/injection_container.dart';
@@ -18,7 +19,7 @@ class UserListPage extends StatelessWidget {
         child: BlocBuilder<UserBloc, UserState>(
           builder: (context, state) {
             if (state is UserLoading) {
-              return const Center(child: CircularProgressIndicator());
+              return const Center(child: CupertinoActivityIndicator());
             } else if (state is UserLoaded) {
               return ListView.builder(
                 itemCount: state.users.length,
